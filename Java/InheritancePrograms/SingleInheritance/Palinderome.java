@@ -9,16 +9,19 @@ class parent
 }
 class child extends parent
 {
-	int rev = 0,rem,temp;
+	
 	public void cal()
 	{
+		int rev = 0,rem,temp;
 		temp = num;
-		
+		do
+			{
 		rem = num % 10;
 		rev = (rev*10)+rem;
 		num = num / 10;
+			}while(num >0);
 	}
-	if(num == rev)
+	if(temp == rev)
 	{
 		System.out.prinln("Number Is Palindrome");
 	}
