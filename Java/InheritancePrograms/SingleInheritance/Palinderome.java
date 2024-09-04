@@ -18,6 +18,14 @@ class child extends parent
 		rev = (rev*10)+rem;
 		num = num / 10;
 	}
+	if(num == rev)
+	{
+		System.out.prinln("Number Is Palindrome");
+	}
+	else
+	{
+		System.out.println("Number Is Not Palindrome");
+	}
 }
 class Palinderome
 {
